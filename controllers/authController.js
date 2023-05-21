@@ -1,6 +1,6 @@
 const errorHandler = require("../middelwares/errorMiddleware");
 const userModel = require("../models/userModel");
-const errorResponse = require("../utils/erroResponse");
+const errorResponse = require("../utils/errorResponse");
 
 
 
