@@ -26,6 +26,8 @@ app.use(errorHandler);
 
 // API routes
 app.use('/api/v1/auth', authRoutes);
+app.use("/api/v1/openai" ,require("./routes/openaiRoutes")); 
+
 
 // Start the server
 const PORT = process.env.PORT || 8080;

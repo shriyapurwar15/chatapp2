@@ -1,5 +1,5 @@
 const errorHandler = require("../middelwares/errorMiddleware");
-const userModel = require("../models/userModel");
+const User= require("../models/userModel");
 const errorResponse = require("../utils/errorResponse");
 
 
@@ -17,6 +17,7 @@ exports.sendToken = (user, statusCode, res) => {
 
 //REGISTER
 exports.registerContoller = async (req, res, next) => {
+    console.log("hello")
     try {
       const { username, email, password } = req.body;
       //exisitng user
