@@ -3,7 +3,7 @@ const errorResponse = require("../utils/errorResponse");
 const errorHandler = (err, req, res, next) => {
   let error = { ...err };
   error.message = err.message;
-t
+
   //mongoose cast Error
   if (err.name === "castError") {
     const message = "Resources Not Found";
