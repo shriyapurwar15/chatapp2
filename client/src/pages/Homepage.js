@@ -4,12 +4,15 @@ import { useNavigate } from "react-router-dom";
 import DescriptionRounded from "@mui/icons-material/DescriptionRounded";
 import FormatAlignLeftOutlined from "@mui/icons-material/FormatAlignLeftOutlined";
 import ChatRounded from "@mui/icons-material/ChatRounded";
+import ImageIcon from '@mui/icons-material/Image';
+import JavascriptIcon from '@mui/icons-material/Javascript';
+
 const Homepage = () => {
   const navigate = useNavigate();
   return (
     <>
       <Box sx={{ display: "flex", flexDirection: "row" }}>
-        <Box p={2}>
+        <Box p={0.10}>
           <Typography variant="h4" mb={2} fontWeight="bold">
             Text Generation
           </Typography>
@@ -32,18 +35,18 @@ const Homepage = () => {
               sx={{ fontSize: 80, color: "primary.main", mt: 2, ml: 2 }}
             />
             <Stack p={3} pt={0}>
-              <Typography fontWeight="bold" variant="h5">
-                TEXT SUMAMRY
+              <Typography fontWeight="bold" variant="h6">
+                TEXT SUMMARY
               </Typography>
               <Typography variant="h6">
-                Summarize long text into short sentences
+               Summarize text
               </Typography>
             </Stack>
           </Card>
         </Box>
         <Box p={2}>
           <Typography variant="h4" mb={2} fontWeight="bold">
-            Parapgraph Generation
+            Paragraph Generation
           </Typography>
           <Card
             onClick={() => navigate("/paragraph")}
@@ -65,17 +68,17 @@ const Homepage = () => {
             />
             <Stack p={3} pt={0}>
               <Typography fontWeight="bold" variant="h5">
-                Parapgraph
+                Paragraph
               </Typography>
               <Typography variant="h6">
-                Generate Paragraph with words
+                Make Paragraph with words
               </Typography>
             </Stack>
           </Card>
         </Box>
         <Box p={2}>
           <Typography variant="h4" mb={2} fontWeight="bold">
-            AI ChatBot
+            AI ChatBot Chit-chat
           </Typography>
           <Card
             onClick={() => navigate("/chatbot")}
@@ -122,15 +125,15 @@ const Homepage = () => {
               },
             }}
           >
-            <ChatRounded
+            <JavascriptIcon
               sx={{ fontSize: 80, color: "primary.main", mt: 2, ml: 2 }}
             />
             <Stack p={3} pt={0}>
-              <Typography fontWeight="bold" variant="h5">
+              <Typography fontWeight="bold" variant="h6">
                 JS CONVERTER
               </Typography>
               <Typography variant="h6">
-                Trasnlate english to javascript code
+                english to javascript code
               </Typography>
             </Stack>
           </Card>
@@ -154,7 +157,7 @@ const Homepage = () => {
               },
             }}
           >
-            <ChatRounded
+            <ImageIcon
               sx={{ fontSize: 80, color: "primary.main", mt: 2, ml: 2 }}
             />
             <Stack p={3} pt={0}>
