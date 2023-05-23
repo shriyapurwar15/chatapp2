@@ -33,10 +33,10 @@ const Navbar = () => {
       </Typography>
       {loggedIn ? (
         <>
-          <NavLink to="/" p={1}>
+          <NavLink to="/" p={1} style={{ marginRight: "10px" }} >
             Home
           </NavLink>
-          <NavLink to="/login" onClick={handleLogout} p={1}>
+          <NavLink to="/login" onClick={handleLogout} p={1} >
             Logout
           </NavLink>
         </>
