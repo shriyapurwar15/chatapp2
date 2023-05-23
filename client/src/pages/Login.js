@@ -15,7 +15,7 @@ import {
 
 const Login = () => {
   const instance = axios.create({
-    baseURL: "http://localhost:8080",
+    baseURL: "https://chat-gpt-new-x1t2.onrender.com",
   });
   const theme = useTheme();
   const navigate = useNavigate();

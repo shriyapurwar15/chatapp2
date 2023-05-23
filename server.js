@@ -8,6 +8,7 @@ const connectDB = require("./config/db");
 const authRoutes = require('./routes/authRoutes');
 const errorHandler = require("./middelwares/errorMiddleware");
 
+
 // Load environment variables
 dotenv.config();
 
