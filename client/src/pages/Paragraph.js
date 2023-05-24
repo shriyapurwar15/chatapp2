@@ -13,6 +13,7 @@ import {
   Collapse,
   Card,
 } from "@mui/material";
+axios.defaults.baseURL = 'https://chat-gpt-new-x1t2.onrender.com';
 
 const Paragraph = () => {
   const theme = useTheme();

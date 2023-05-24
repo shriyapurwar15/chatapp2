@@ -12,6 +12,7 @@ import {
   Alert,
   Collapse,
 } from "@mui/material";
+axios.defaults.baseURL = 'https://chat-gpt-new-x1t2.onrender.com';
 
 const Login = () => {
   const instance = axios.create({
